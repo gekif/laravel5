@@ -24,3 +24,7 @@ Route::get('/login', function () {
 });
 
 Route::resource('data', 'DataController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
